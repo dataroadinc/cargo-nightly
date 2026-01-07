@@ -27,6 +27,10 @@ exclude = [
     "rustfmt.toml",
 ]
 
+[lib]
+name = "cargo_nightly"
+path = "src/lib.rs"
+
 [[bin]]
 name = "cargo-nightly"
 path = "src/main.rs"
