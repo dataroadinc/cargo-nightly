@@ -127,6 +127,7 @@ jobs:
       - name: Release Summary
         run: |
           echo "🎉 Successfully released v$NEW_VERSION"
+          echo "🎉 Successfully released v$NEW_VERSION"
           echo "📦 Published to crates.io: https://crates.io/crates/cargo-nightly"
-          echo "📝 GitHub Release: https://github.com/dataroadinc/cargo-nightly/releases/tag/v$NEW_VERSION"
+          echo "📝 GitHub Release: https://github.com/${{ github.repository }}/releases/tag/v$NEW_VERSION"
           echo "📚 Documentation: https://docs.rs/cargo-nightly/$NEW_VERSION"

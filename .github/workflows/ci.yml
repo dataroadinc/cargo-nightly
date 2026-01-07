@@ -48,7 +48,7 @@ jobs:
           path: target
           key: ${{ runner.os }}-target-clippy-${{ hashFiles('**/Cargo.lock') }}
       - name: Run clippy
-        run: cargo +nightly clippy --all-targets --all-features -- -D warnings
+        run: cargo +nightly clippy --all-targets --all-features -- -D warnings -W missing-docs
 
   # Run tests
   test:
@@ -81,7 +81,14 @@ jobs:
       - name: Run tests
         run: cargo test
       - name: Run doc tests
-        run: cargo test --doc
+        shell: bash
+        run: |
+          # Only run doc tests if the package has a library target
+          if cargo metadata --format-version 1 --no-deps | grep -q '"lib"'; then
+            cargo test --doc
+          else
+            echo "Skipping doc tests: package has no library target"
+          fi
 
   # Detect version changes and prepare for release
   version-check:
@@ -201,6 +208,7 @@ jobs:
 
       - name: Release Summary
         run: |
+          echo "🎉 Successfully released v${{ needs.version-check.outputs.new_version }}"
           echo "🎉 Successfully released v${{ needs.version-check.outputs.new_version }}"
           echo "📦 Published to crates.io: https://crates.io/crates/cargo-nightly"
           echo "📝 GitHub Release: https://github.com/dataroadinc/cargo-nightly/releases/tag/v${{ needs.version-check.outputs.new_version }}"

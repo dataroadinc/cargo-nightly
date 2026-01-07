@@ -1,7 +1,7 @@
 # Tag prefix (v0.0.1, v0.0.2, etc.)
 tag_prefix = "v"
 
-# Root-level hooks run automatically (no flag needed)
+# Root-level hooks run automatically (no --hook-profile flag needed)
 pre_bump_hooks = [
     "cargo set-version {{version}}",
     "cargo update --workspace",
