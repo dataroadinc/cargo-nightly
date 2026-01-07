@@ -4,9 +4,9 @@ This document contains information for repository maintainers.
 
 ## Production Tool Standards
 
-⚠️ **Important**: cargo-fmt-toml is a production tool used in CI/CD
-pipelines. Users depend on it for formatting Cargo.toml files across
-their projects. This demands:
+⚠️ **Important**: cargo-nightly is a production tool used in CI/CD
+pipelines. Users depend on it for enabling nightly toolchain usage in
+cargo aliases. This demands:
 
 - **Strict review standards** - Changes must be thoroughly reviewed
 - **Mandatory signed commits** - Verify authenticity of all code
@@ -35,10 +35,10 @@ To ensure all commits are signed, configure branch protection rules:
 
 ```bash
 # Using GitHub CLI
-gh api repos/agnos-ai/cargo-fmt-toml/branches/main/protection
+gh api repos/dataroadinc/cargo-nightly/branches/main/protection
 
 # Or check in the web UI:
-# https://github.com/dataroadinc/cargo-fmt-toml/settings/branch_protection_rules
+# https://github.com/dataroadinc/cargo-nightly/settings/branch_protection_rules
 ```
 
 ### Required Branch Protection Rules
