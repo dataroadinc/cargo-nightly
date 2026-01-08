@@ -1,13 +1,15 @@
-# Contributing to cargo-fmt-toml
+# Contributing to cargo-nightly
 
-Thank you for your interest in contributing! This project
-uses [Conventional Commits](https://www.conventionalcommits.org/)
-and [Cocogitto](https://github.com/cocogitto/cocogitto) for
-automated changelog generation.
+Thank you for your interest in contributing! This project uses
+[Angular Conventional Commits](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit)
+(also known as the
+[Conventional Commits](https://www.conventionalcommits.org/)
+specification) and [Cocogitto](https://github.com/cocogitto/cocogitto)
+for automated changelog generation.
 
 ## Commit Message Format
 
-We follow the Conventional Commits specification. Each
+We follow the **Angular Conventional Commits** specification. Each
 commit message should be structured as follows:
 
 ```text
@@ -86,8 +88,8 @@ plain text to JSON
 ### 1. Fork and Clone
 
 ```bash
-git clone git@github.com:YOUR_USERNAME/cargo-fmt-toml.git
-cd cargo-fmt-toml
+git clone git@github.com:YOUR_USERNAME/cargo-nightly.git
+cd cargo-nightly
 ```
 
 ### 2. Create a Branch
@@ -109,7 +111,7 @@ git checkout -b fix/bug-description
 
 ### 4. Commit Changes
 
-Use conventional commit format:
+Use Angular Conventional Commits format:
 
 ```bash
 git add .
@@ -187,7 +189,7 @@ All contributions go through code review:
 - Follow Rust best practices
 - Add tests for new features
 - Update documentation
-- Use conventional commit format
+- Use Angular Conventional Commits format
 
 ## Questions?
 
