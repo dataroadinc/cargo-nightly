@@ -63,7 +63,7 @@ cargo +nightly clippy --all-targets --all-features -- -D warnings -W missing-doc
 
 ## Code Style
 
-- **Rust Edition**: 2024, MSRV 1.92.0
+- **Rust Edition**: 2024, MSRV 1.94.1
 - **Formatting**: Uses nightly rustfmt with vertical imports grouped
   by std/external/crate (see `rustfmt.toml`)
 - **Clippy**: Nightly with strict settings (max 120 lines/function,
@@ -113,7 +113,7 @@ with CI's tag creation workflow.
 - Never execute `git push` - user must push manually
 - Prefer `git rebase` over `git merge` for linear history
 
-Git hooks in `.githooks/` are auto-installed via `sloughi` during
+Git hooks in `.githooks/` are auto-installed via `rhusky` during
 build.
 
 ## Markdown formatting
