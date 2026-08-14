@@ -2,8 +2,8 @@
 
 [![Crates.io](https://img.shields.io/crates/v/cargo-nightly.svg)](https://crates.io/crates/cargo-nightly)
 [![Documentation](https://docs.rs/cargo-nightly/badge.svg)](https://docs.rs/cargo-nightly)
-[![CI](https://github.com/dataroadinc/cargo-nightly/workflows/CI%2FCD/badge.svg)](https://github.com/dataroadinc/cargo-nightly/actions)
-[![License: CC-BY-SA-4.0](https://img.shields.io/badge/License-CC--BY--SA--4.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![CI](https://github.com/legra-ai/cargo-nightly/actions/workflows/ci.yml/badge.svg)](https://github.com/legra-ai/cargo-nightly/actions/workflows/ci.yml)
+[![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](LICENSE-MIT)
 [![Downloads](https://img.shields.io/crates/d/cargo-nightly.svg)](https://crates.io/crates/cargo-nightly)
 
 Cargo subcommand that forwards commands to the nightly toolchain, enabling
@@ -121,5 +121,7 @@ used in aliases.
 
 ## License
 
-Creative Commons Attribution-ShareAlike 4.0 International License - see
-[LICENSE](LICENSE) file for details.
+Copyright © 2026 DataRoad Inc, Delaware, USA, trading as Legra.
+
+Licensed under either the [MIT license](LICENSE-MIT) or the
+[Apache License, Version 2.0](LICENSE-APACHE), at your option.
